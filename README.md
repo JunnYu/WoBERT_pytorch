@@ -3,12 +3,15 @@
 - WoBERT:[chinese_wobert_L-12_H-768_A-12.zip](https://pan.baidu.com/s/1BrdFSx9_n1q2uWBiQrpalw) (提取码：kim2)
 - WoBERT+:[chinese_wobert_plus_L-12_H-768_A-12.zip](https://pan.baidu.com/s/1Ltq3ltQsyBCj56zoOOvI9A) (提取码：aedw)
 
-
+## 安装
+```bash
+pip install git+https://github.com/JunnYu/WoBERT_pytorch.git
+```
 ## MLM测试
 ```python
 import torch
 from transformers import BertForMaskedLM as WoBertForMaskedLM
-from tokenization_wobert import WoBertTokenizer
+from wobert import WoBertTokenizer
 pretrained_model_or_path_list = [
     "junnyu/wobert_chinese_plus_base", "junnyu/wobert_chinese_base"
 ]

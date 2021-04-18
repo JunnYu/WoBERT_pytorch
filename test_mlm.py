@@ -1,6 +1,6 @@
 import torch
 from transformers import BertForMaskedLM as WoBertForMaskedLM
-from tokenization_wobert import WoBertTokenizer
+from wobert import WoBertTokenizer
 
 # huggingface hub
 pretrained_model_or_path_list = [
